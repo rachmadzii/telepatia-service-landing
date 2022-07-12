@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+:root {
+  --purple: #563ad6;
+  --navy: #02044a;
+  --azure: #3abad6;
+  --grey: #9b9cb7;
+  --white: #ffffff;
+}
+
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+.navbar {
+  padding: 30px 100px;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  font-weight: 500;
+  color: var(--purple);
+}
+
+.navbar-nav .nav-link {
+  color: var(--navy);
+}
+
+.navbar-toggler {
+  border: none;
+  color: var(--navy);
+}
+
+.navbar-toggler:focus,
+.btn {
+  box-shadow: none !important;
+}
+
+.banner {
+  display: flex;
+  padding: 20px 120px;
+  gap: 100px;
+  align-items: center;
+}
+
+.title-text {
+  font-size: 42px;
+  line-height: 56px;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.subtitle-text {
+  font-size: 18px;
+  color: var(--grey);
+  line-height: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-primary {
+  color: var(--white);
+  background-color: var(--purple);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #4f34c6;
+}
+
+.btn-secondary {
+  color: #777790;
+  background-color: #eaebf4;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--grey);
+}
+
+.btn-tertiary {
+  color: var(--white);
+  background-color: var(--azure);
+}
+
+.btn-tertiary:hover,
+.btn-tertiary:focus {
+  background-color: #3eb2cc;
+}
+
+.list-logo {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.logo-partner {
+  height: 30px;
+}
+
+.service-pricing {
+  background-color: #f9f9fb;
+  padding: 70px 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pricing {
+  display: flex;
+  gap: 70px;
+  margin-top: 40px;
+}
+
+.card-pricing {
+  border-radius: 22px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  width: 300px;
+  height: fit-content;
+}
+
+.basic-category {
+  background-color: var(--white);
+  color: var(--navy);
+}
+
+.popular-category {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.card-pricing .category {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.card-pricing .price {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.card-pricing .subtitle-basic {
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.card-pricing .subtitle-popular {
+  color: #b19fff;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.list-benefit {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+}
+
+.list-benefit .benefit {
+  display: flex;
+  gap: 8px;
+}
+
+.list-benefit .benefit-text {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .navbar,
+  .banner {
+    padding: 30px 40px;
+  }
+  .banner {
+    gap: 50px;
+  }
+  .title-text {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar,
+  .banner {
+    padding: 20px;
+  }
+  .banner img {
+    width: 80%;
+  }
+  .banner,
+  .pricing {
+    flex-direction: column;
+  }
+  .service-pricing {
+    padding: 70px 20px;
+  }
+}
